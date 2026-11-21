@@ -1,0 +1,15 @@
+.admin-page-background {
+  position: fixed; /* ثابت برای پوشش کل صفحه */
+  top: 0;
+  left: 0;
+  width: 100%; /* عرض کل صفحه */
+  height: 100vh; /* ارتفاع کل صفحه نمایش */
+  background-image: url('/school-default.jpg'); /* مسیر عکس */
+  background-size: cover; /* پر کردن کامل صفحه */
+  background-repeat: no-repeat; /* جلوگیری از تکرار */
+  background-position: center; /* مرکز تصویر */
+  background-color: rgba(0, 0, 0, 0.3);
+  filter: brightness(50%);
+    /* color: rgba(0, 0, 0, 0.6); */
+
+}

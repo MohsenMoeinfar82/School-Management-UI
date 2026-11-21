@@ -1,0 +1,94 @@
+.responsive-swal-popup {
+    max-width: 500px;  
+    width: 90%;        
+    padding: 20px;   
+}
+
+@media (max-width: 600px) {
+    .responsive-swal-popup {
+        width: 100%;  
+        font-size: 14px; 
+    }
+}
+
+body {
+    background-color: white;
+    color: black; 
+    font-family: Arial, sans-serif;
+}
+
+
+.main-container {
+    margin-inline: auto;
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.login-button-holder {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-buttons {
+    width: 150px;
+    height: 60px;
+    padding-block: 10px;
+    margin-top: 20px;
+    align-self: center;
+    background-color: #C5C5CE;
+    border-radius: 1rem;
+}
+
+.main-buttons:hover {
+    background-color: #477FD7;
+    transition: 0.7s;
+}
+
+.main-buttons:focus {
+    outline: none;
+    background-color: #2650EA;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        padding: 10px;
+        max-width: 90%; 
+    }
+
+    .main-login-signup-title {
+        font-size: 3rem;
+    }
+
+    .main-buttons {
+        width: 130px;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        padding: 10px;
+        max-width: 95%; 
+    }
+
+    .main-login-signup-title {
+        font-size: 1.7rem;
+    }
+
+    .main-buttons {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .login-button-holder {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}

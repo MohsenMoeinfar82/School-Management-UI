@@ -1,0 +1,129 @@
+#root {
+    margin: 0 auto;
+    text-align: center;
+}
+
+body.signup-background { 
+    overflow-x: hidden; 
+}
+  
+.login-container {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+    max-width: 500px; 
+    height: auto;
+    border-radius: 3rem;
+    border-style: none;
+    margin: 10px auto;
+    padding: 40px 30px 30px 30px;
+    justify-self: center;
+    box-sizing: border-box; 
+}
+
+#login-title {
+    padding-bottom: 20px;
+}
+
+.login-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.login-input {
+    background-color: #ffffff !important;
+    font-size: medium;
+    border-radius: 2rem;
+    border-style: none;
+    padding-left: 20px;
+    padding-block: 12px;
+    margin-block: 20px;
+    color: black !important; 
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 0px 7px #929193;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box; 
+}
+
+.login-input:focus {
+    box-shadow: 0px 0px 12px #712cb7;
+    transition: 0.5s;
+}
+
+.login-input:-webkit-autofill,
+.login-input:-webkit-autofill:hover,
+.login-input:-webkit-autofill:focus,
+.login-input:-webkit-autofill:active { 
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-text-fill-color: black !important;
+    -webkit-box-shadow: 0px 0px 7px #929193 !important;
+}
+
+.password-toggle {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.show-password-checkbox {
+    margin-right: 10px;
+}
+
+.login-button {
+    width: 50%;
+    padding-block: 10px;
+    margin-top: 20px;
+    align-self: center;
+    background-color: #C5C5CE;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #477FD7;
+    transition: 0.7s;
+}
+
+.login-button:focus {
+    background-color: #2650EA;
+}
+
+.signup-link {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%; 
+        max-width: 100%; 
+        height: auto;
+    }
+
+    .login-input, .login-button {
+        width: 90%; 
+        max-width: 100%;
+    }
+
+    .login-fields {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 97%; 
+    }
+
+    .login-input, .login-button {
+        width: 95%;
+    }
+
+    .login-fields {
+        gap: 15px;
+    }
+}
